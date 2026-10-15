@@ -29,18 +29,18 @@ mkdir -p vscode
 cd vscode || { echo "'vscode' dir not found"; exit 1; }
 
 git init -q
-git remote add origin https://github.com/voideditor/void.git
+git remote add origin https://github.com/pedro2rafael4561-boop/DarkOS.git
 
 # Allow callers to specify a particular commit to checkout via the
-# environment variable VOID_COMMIT.  We still default to the tip of the
+# environment variable darkos_commit.  We still default to the tip of the
 # ${VOID_BRANCH} branch when the variable is not provided.  Keeping
 # VOID_BRANCH as "main" ensures the rest of the script (and downstream
 # consumers) behave exactly as before.
-if [[ -n "${VOID_COMMIT}" ]]; then
-  echo "Using explicit commit ${VOID_COMMIT}"
+if [[ -n "${darkos_commit}" ]]; then
+  echo "Using explicit commit ${darkos_commit}"
   # Fetch just that commit to keep the clone shallow.
-  git fetch --depth 1 origin "${VOID_COMMIT}"
-  git checkout "${VOID_COMMIT}"
+  git fetch --depth 1 origin "${darkos_commit}"
+  git checkout "${darkos_commit}"
 else
   git fetch --depth 1 origin "${VOID_BRANCH}"
   git checkout FETCH_HEAD
@@ -50,11 +50,11 @@ MS_TAG=$( jq -r '.version' "package.json" )
 MS_COMMIT=$VOID_BRANCH # Void - MS_COMMIT doesn't seem to do much
 VOID_VERSION=$( jq -r '.voidVersion' "product.json" ) # Void added this
 
-if [[ -n "${VOID_RELEASE}" ]]; then # Void added VOID_RELEASE as optional to bump manually
-  RELEASE_VERSION="${MS_TAG}${VOID_RELEASE}"
+if [[ -n "${darkos_release}" ]]; then # Void added darkos_release as optional to bump manually
+  RELEASE_VERSION="${MS_TAG}${darkos_release}"
 else
-  VOID_RELEASE=$( jq -r '.voidRelease' "product.json" )
-  RELEASE_VERSION="${MS_TAG}${VOID_RELEASE}"
+  darkos_release=$( jq -r '.voidRelease' "product.json" )
+  RELEASE_VERSION="${MS_TAG}${darkos_release}"
 fi
 # Void - RELEASE_VERSION is later used as version (1.0.3+RELEASE_VERSION), so it MUST be a number or it will throw a semver error in void
 

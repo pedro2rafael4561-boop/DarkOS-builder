@@ -12,10 +12,10 @@ on:
       checkout_pr:
         type: string
         description: Checkout PR
-      void_commit: # Void added this
+      darkos_commit: # Void added this
         type: string
         description: Checkout specific Void commit
-      void_release: # Void added this
+      darkos_release: # Void added this
         type: string
         description: Custom release number
   repository_dispatch:
@@ -31,13 +31,13 @@ on:
     - '**/*.md'
 
 env:
-  APP_NAME: Void
+  APP_NAME: DarkOS
   ASSETS_REPOSITORY: ${{ github.repository_owner }}/binaries
-  BINARY_NAME: void
+  BINARY_NAME: darkos
   GH_REPO_PATH: ${{ github.repository_owner }}/binaries
   ORG_NAME: ${{ github.repository_owner }}
   OS_NAME: windows
-  VERSIONS_REPOSITORY: ${{ github.repository_owner }}/versions
+  VERSIONS_REPOSITORY: ${{ github.repository_owner }}/DarkOS-versions
   VSCODE_QUALITY: stable
 
 jobs:
@@ -62,8 +62,8 @@ jobs:
 
       - name: Clone VSCode repo
         env: # Void added this
-          VOID_COMMIT: ${{ github.event.inputs.void_commit }} # Void added this
-          VOID_RELEASE: ${{ github.event.inputs.void_release }} # Void added this
+          darkos_commit: ${{ github.event.inputs.darkos_commit }} # Void added this
+          darkos_release: ${{ github.event.inputs.darkos_release }} # Void added this
         run: ./get_repo.sh
 
       - name: Check PR or cron
@@ -125,8 +125,8 @@ jobs:
 
       - name: Clone VSCode repo
         env: # Void added this
-          VOID_COMMIT: ${{ github.event.inputs.void_commit }} # Void added this
-          VOID_RELEASE: ${{ github.event.inputs.void_release }} # Void added this
+          darkos_commit: ${{ github.event.inputs.darkos_commit }} # Void added this
+          darkos_release: ${{ github.event.inputs.darkos_release }} # Void added this
         run: ./get_repo.sh
         if: env.SHOULD_BUILD == 'yes'
 

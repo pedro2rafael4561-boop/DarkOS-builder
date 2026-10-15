@@ -11,7 +11,7 @@ WIN_SDK_FULL_VERSION="10.0.17763.0"
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
   PRODUCT_NAME="Void - Insiders"
-  PRODUCT_CODE="VoidInsiders"
+  PRODUCT_CODE="DarkOSInsiders"
   PRODUCT_UPGRADE_CODE="1C9B7195-5A9A-43B3-B4BD-583E20498467"
   ICON_DIR="..\\..\\..\\src\\insider\\resources\\win32"
   SETUP_RESOURCES_DIR=".\\resources\\insider"

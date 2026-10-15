@@ -123,42 +123,42 @@ setpath_json() {
 cp product.json{,.bak}
 
 setpath "product" "checksumFailMoreInfoUrl" "https://go.microsoft.com/fwlink/?LinkId=828886"
-setpath "product" "documentationUrl" "https://voideditor.com"
+setpath "product" "documentationUrl" "https://github.com/pedro2rafael4561-boop/DarkOS"
 # setpath_json "product" "extensionsGallery" '{"serviceUrl": "https://open-vsx.org/vscode/gallery", "itemUrl": "https://open-vsx.org/vscode/item"}'
 setpath "product" "introductoryVideosUrl" "https://go.microsoft.com/fwlink/?linkid=832146"
 setpath "product" "keyboardShortcutsUrlLinux" "https://go.microsoft.com/fwlink/?linkid=832144"
 setpath "product" "keyboardShortcutsUrlMac" "https://go.microsoft.com/fwlink/?linkid=832143"
 setpath "product" "keyboardShortcutsUrlWin" "https://go.microsoft.com/fwlink/?linkid=832145"
-setpath "product" "licenseUrl" "https://github.com/voideditor/void/blob/main/LICENSE.txt"
+setpath "product" "licenseUrl" "https://github.com/pedro2rafael4561-boop/DarkOS/blob/main/LICENSE.txt"
 # setpath_json "product" "linkProtectionTrustedDomains" '["https://open-vsx.org"]'
 # setpath "product" "releaseNotesUrl" "https://go.microsoft.com/fwlink/?LinkID=533483#vscode"
-setpath "product" "reportIssueUrl" "https://github.com/voideditor/void/issues/new"
-setpath "product" "requestFeatureUrl" "https://github.com/voideditor/void/issues/new"
+setpath "product" "reportIssueUrl" "https://github.com/pedro2rafael4561-boop/DarkOS/issues/new"
+setpath "product" "requestFeatureUrl" "https://github.com/pedro2rafael4561-boop/DarkOS/issues/new"
 setpath "product" "tipsAndTricksUrl" "https://go.microsoft.com/fwlink/?linkid=852118"
-setpath "product" "twitterUrl" "https://x.com/thevoideditor"
+setpath "product" "twitterUrl" "https://x.com/darkoseditor"
 
 if [[ "${DISABLE_UPDATE}" != "yes" ]]; then
-  setpath "product" "updateUrl" "https://raw.githubusercontent.com/voideditor/versions/refs/heads/main"
-  setpath "product" "downloadUrl" "https://github.com/voideditor/binaries/releases"
+  setpath "product" "updateUrl" "https://raw.githubusercontent.com/pedro2rafael4561-boop/DarkOS-versions/refs/heads/main"
+  setpath "product" "downloadUrl" "https://github.com/pedro2rafael4561-boop/DarkOS/releases"
 fi
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-  setpath "product" "nameShort" "Void - Insiders"
-  setpath "product" "nameLong" "Void - Insiders"
-  setpath "product" "applicationName" "void-insiders"
-  setpath "product" "dataFolderName" ".void-insiders"
-  setpath "product" "linuxIconName" "void-insiders"
+  setpath "product" "nameShort" "DarkOS - Insiders"
+  setpath "product" "nameLong" "DarkOS - Insiders"
+  setpath "product" "applicationName" "darkos-insiders"
+  setpath "product" "dataFolderName" ".darkos-insiders"
+  setpath "product" "linuxIconName" "darkos-insiders"
   setpath "product" "quality" "insider"
-  setpath "product" "urlProtocol" "void-insiders"
-  setpath "product" "serverApplicationName" "void-server-insiders"
-  setpath "product" "serverDataFolderName" ".void-server-insiders"
-  setpath "product" "darwinBundleIdentifier" "ai.voideditor.VoidInsiders"
-  setpath "product" "win32AppUserModelId" "Void.VoidInsiders"
-  setpath "product" "win32DirName" "Void Insiders"
-  setpath "product" "win32MutexName" "voidinsiders"
-  setpath "product" "win32NameVersion" "Void Insiders"
-  setpath "product" "win32RegValueName" "VoidInsiders"
-  setpath "product" "win32ShellNameShort" "Void Insiders"
+  setpath "product" "urlProtocol" "darkos-insiders"
+  setpath "product" "serverApplicationName" "darkos-server-insiders"
+  setpath "product" "serverDataFolderName" ".darkos-server-insiders"
+  setpath "product" "darwinBundleIdentifier" "ai.darkos.DarkOSInsiders"
+  setpath "product" "win32AppUserModelId" "Void.DarkOSInsiders"
+  setpath "product" "win32DirName" "DarkOS Insiders"
+  setpath "product" "win32MutexName" "DarkOSInsiders"
+  setpath "product" "win32NameVersion" "DarkOS Insiders"
+  setpath "product" "win32RegValueName" "DarkOSInsiders"
+  setpath "product" "win32ShellNameShort" "DarkOS Insiders"
   setpath "product" "win32AppId" "{{5893CE20-77AA-4856-A655-ECE65CBCF1C7}"
   setpath "product" "win32x64AppId" "{{7A261980-5847-44B6-B554-31DF0F5CDFC9}"
   setpath "product" "win32arm64AppId" "{{EE4FF7AA-A874-419D-BAE0-168C9DBCE211}"
@@ -166,21 +166,21 @@ if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
   setpath "product" "win32x64UserAppId" "{{5B1813E3-1D97-4E00-AF59-C59A39CF066A}"
   setpath "product" "win32arm64UserAppId" "{{C2FA90D8-B265-41B1-B909-3BAEB21CAA9D}"
 else
-  setpath "product" "nameShort" "Void"
-  setpath "product" "nameLong" "Void"
-  setpath "product" "applicationName" "void"
-  setpath "product" "linuxIconName" "void"
+  setpath "product" "nameShort" "DarkOS"
+  setpath "product" "nameLong" "DarkOS"
+  setpath "product" "applicationName" "DarkOS"
+  setpath "product" "linuxIconName" "DarkOS"
   setpath "product" "quality" "stable"
-  setpath "product" "urlProtocol" "void"
-  setpath "product" "serverApplicationName" "void-server"
-  setpath "product" "serverDataFolderName" ".void-server"
-  setpath "product" "darwinBundleIdentifier" "com.void"
-  setpath "product" "win32AppUserModelId" "Void.Void"
-  setpath "product" "win32DirName" "Void"
-  setpath "product" "win32MutexName" "void"
-  setpath "product" "win32NameVersion" "Void"
-  setpath "product" "win32RegValueName" "Void"
-  setpath "product" "win32ShellNameShort" "Void"
+  setpath "product" "urlProtocol" "DarkOS"
+  setpath "product" "serverApplicationName" "darkos-server"
+  setpath "product" "serverDataFolderName" ".darkos-server"
+  setpath "product" "darwinBundleIdentifier" "com.darkos"
+  setpath "product" "win32AppUserModelId" "DarkOS.DarkOS"
+  setpath "product" "win32DirName" "DarkOS"
+  setpath "product" "win32MutexName" "DarkOS"
+  setpath "product" "win32NameVersion" "DarkOS"
+  setpath "product" "win32RegValueName" "DarkOS"
+  setpath "product" "win32ShellNameShort" "DarkOS"
   # Void - already set in product
   # setpath "product" "win32AppId" "{{88DA3577-054F-4CA1-8122-7D820494CFFB}"
   # setpath "product" "win32x64AppId" "{{9D394D01-1728-45A7-B997-A6C82C5452C3}"
@@ -200,27 +200,27 @@ cp package.json{,.bak}
 
 setpath "package" "version" "${RELEASE_VERSION%-insider}"
 
-replace 's|Microsoft Corporation|Void|' package.json
+replace 's|Microsoft Corporation|DarkOS|' package.json
 
 cp resources/server/manifest.json{,.bak}
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-  setpath "resources/server/manifest" "name" "Void - Insiders"
-  setpath "resources/server/manifest" "short_name" "Void - Insiders"
+  setpath "resources/server/manifest" "name" "DarkOS - Insiders"
+  setpath "resources/server/manifest" "short_name" "DarkOS - Insiders"
 else
-  setpath "resources/server/manifest" "name" "Void"
-  setpath "resources/server/manifest" "short_name" "Void"
+  setpath "resources/server/manifest" "name" "DarkOS"
+  setpath "resources/server/manifest" "short_name" "DarkOS"
 fi
 
 cp resources/server/manifest.json{,.bak}
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-  setpath "resources/server/manifest" "name" "Void - Insiders"
-  setpath "resources/server/manifest" "short_name" "Void - Insiders"
+  setpath "resources/server/manifest" "name" "DarkOS - Insiders"
+  setpath "resources/server/manifest" "short_name" "DarkOS - Insiders"
 else
   # Void already has this
-  setpath "resources/server/manifest" "name" "Void"
-  setpath "resources/server/manifest" "short_name" "Void"
+  setpath "resources/server/manifest" "name" "DarkOS"
+  setpath "resources/server/manifest" "short_name" "DarkOS"
 fi
 
 # announcements
@@ -228,8 +228,8 @@ fi
 
 ../undo_telemetry.sh
 
-replace 's|Microsoft Corporation|Void|' build/lib/electron.js
-replace 's|Microsoft Corporation|Void|' build/lib/electron.ts
+replace 's|Microsoft Corporation|DarkOS|' build/lib/electron.js
+replace 's|Microsoft Corporation|DarkOS|' build/lib/electron.ts
 replace 's|([0-9]) Microsoft|\1 Void|' build/lib/electron.js
 replace 's|([0-9]) Microsoft|\1 Void|' build/lib/electron.ts
 
@@ -239,37 +239,37 @@ if [[ "${OS_NAME}" == "linux" ]]; then
   # as we are renaming the application to void
   # we need to edit a line in the post install template
   if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-    sed -i "s/code-oss/void-insiders/" resources/linux/debian/postinst.template
+    sed -i "s/code-oss/darkos-insiders/" resources/linux/debian/postinst.template
   else
     sed -i "s/code-oss/void/" resources/linux/debian/postinst.template
   fi
 
   # fix the packages metadata
   # code.appdata.xml
-  sed -i 's|Visual Studio Code|Void|g' resources/linux/code.appdata.xml
-  sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://voideditor.com|' resources/linux/code.appdata.xml
+  sed -i 's|Visual Studio Code|DarkOS|g' resources/linux/code.appdata.xml
+  sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://github.com/pedro2rafael4561-boop/DarkOS|' resources/linux/code.appdata.xml
   sed -i 's|https://code.visualstudio.com/home/home-screenshot-linux-lg.png|https://vscodium.com/img/vscodium.png|' resources/linux/code.appdata.xml
-  sed -i 's|https://code.visualstudio.com|https://voideditor.com|' resources/linux/code.appdata.xml
+  sed -i 's|https://code.visualstudio.com|https://github.com/pedro2rafael4561-boop/DarkOS|' resources/linux/code.appdata.xml
 
   # control.template
-  sed -i 's|Microsoft Corporation <vscode-linux@microsoft.com>|Void Team <team@voideditor.com>|'  resources/linux/debian/control.template
-  sed -i 's|Visual Studio Code|Void|g' resources/linux/debian/control.template
-  sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://voideditor.com|' resources/linux/debian/control.template
-  sed -i 's|https://code.visualstudio.com|https://voideditor.com|' resources/linux/debian/control.template
+  sed -i 's|Microsoft Corporation <vscode-linux@microsoft.com>|DarkOS Team <pedro2rafael4561@gmail.com>|'  resources/linux/debian/control.template
+  sed -i 's|Visual Studio Code|DarkOS|g' resources/linux/debian/control.template
+  sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://github.com/pedro2rafael4561-boop/DarkOS|' resources/linux/debian/control.template
+  sed -i 's|https://code.visualstudio.com|https://github.com/pedro2rafael4561-boop/DarkOS|' resources/linux/debian/control.template
 
   # code.spec.template
-  sed -i 's|Microsoft Corporation|Void Team|' resources/linux/rpm/code.spec.template
-  sed -i 's|Visual Studio Code Team <vscode-linux@microsoft.com>|Void Team <team@voideditor.com>|' resources/linux/rpm/code.spec.template
-  sed -i 's|Visual Studio Code|Void|' resources/linux/rpm/code.spec.template
-  sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://voideditor.com|' resources/linux/rpm/code.spec.template
-  sed -i 's|https://code.visualstudio.com|https://voideditor.com|' resources/linux/rpm/code.spec.template
+  sed -i 's|Microsoft Corporation|DarkOS Team|' resources/linux/rpm/code.spec.template
+  sed -i 's|Visual Studio Code Team <vscode-linux@microsoft.com>|DarkOS Team <pedro2rafael4561@gmail.com>|' resources/linux/rpm/code.spec.template
+  sed -i 's|Visual Studio Code|DarkOS|' resources/linux/rpm/code.spec.template
+  sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://github.com/pedro2rafael4561-boop/DarkOS|' resources/linux/rpm/code.spec.template
+  sed -i 's|https://code.visualstudio.com|https://github.com/pedro2rafael4561-boop/DarkOS|' resources/linux/rpm/code.spec.template
 
   # snapcraft.yaml
-  sed -i 's|Visual Studio Code|Void|'  resources/linux/rpm/code.spec.template
+  sed -i 's|Visual Studio Code|DarkOS|'  resources/linux/rpm/code.spec.template
 elif [[ "${OS_NAME}" == "windows" ]]; then
   # code.iss
-  sed -i 's|https://code.visualstudio.com|https://voideditor.com|' build/win32/code.iss
-  sed -i 's|Microsoft Corporation|Void|' build/win32/code.iss
+  sed -i 's|https://code.visualstudio.com|https://github.com/pedro2rafael4561-boop/DarkOS|' build/win32/code.iss
+  sed -i 's|Microsoft Corporation|DarkOS|' build/win32/code.iss
 fi
 
 cd ..
