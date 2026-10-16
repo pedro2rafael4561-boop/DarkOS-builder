@@ -32,9 +32,9 @@ on:
 
 env:
   APP_NAME: DarkOS
-  ASSETS_REPOSITORY: ${{ github.repository_owner }}/binaries
+  ASSETS_REPOSITORY: ${{ github.repository_owner }}/DarkOS-binaries
   BINARY_NAME: darkos
-  GH_REPO_PATH: ${{ github.repository_owner }}/binaries
+  GH_REPO_PATH: ${{ github.repository_owner }}/DarkOS
   ORG_NAME: ${{ github.repository_owner }}
   OS_NAME: windows
   VERSIONS_REPOSITORY: ${{ github.repository_owner }}/DarkOS-versions

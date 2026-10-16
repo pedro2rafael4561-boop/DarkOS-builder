@@ -1,28 +1,28 @@
-# Void VOID_VERSION
+# DarkOS VOID_VERSION
 
-See https://github.com/pedro2rafael4561-boop/DarkOS for Void's official download page.
+See https://github.com/pedro2rafael4561-boop/DarkOS for DarkOS's official download page.
 
 For maintainers: [`DarkOS-builder/`](https://github.com/pedro2rafael4561-boop/DarkOS-builder#readme)
 
 # Binaries
 
 ## Windows
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/DarkOSSetup-x64-RELEASE_VERSION.exe">Windows (x64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/DarkOSSetup-arm64-RELEASE_VERSION.exe">Windows (ARM)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOSSetup-x64-RELEASE_VERSION.exe">Windows (x64)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOSSetup-arm64-RELEASE_VERSION.exe">Windows (ARM)</a>
 
 ## Mac
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void.x64.RELEASE_VERSION.dmg">Mac (x64 / Intel)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void.arm64.RELEASE_VERSION.dmg">Mac (ARM / M Chip)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS.x64.RELEASE_VERSION.dmg">Mac (x64 / Intel)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS.arm64.RELEASE_VERSION.dmg">Mac (ARM / M Chip)</a>
 
 ## Linux
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void-linux-x64-RELEASE_VERSION.tar.gz">Linux .tar.gz (x64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void-linux-arm64-RELEASE_VERSION.tar.gz">Linux .tar.gz (arm64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void-linux-armhf-RELEASE_VERSION.tar.gz">Linux .tar.gz (armhf)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void-linux-loong64-RELEASE_VERSION.tar.gz">Linux .tar.gz (loong64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void-linux-ppc64le-RELEASE_VERSION.tar.gz">Linux .tar.gz (ppc64le)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/Void-linux-riscv64-RELEASE_VERSION.tar.gz">Linux .tar.gz (riscv64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/darkos_release_VERSION_arm64.deb">Linux .deb (ARM)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS/releases/download/RELEASE_VERSION/darkos_release_VERSION_amd64.deb">Linux .deb (AMD)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-x64-RELEASE_VERSION.tar.gz">Linux .tar.gz (x64)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-arm64-RELEASE_VERSION.tar.gz">Linux .tar.gz (arm64)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-armhf-RELEASE_VERSION.tar.gz">Linux .tar.gz (armhf)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-loong64-RELEASE_VERSION.tar.gz">Linux .tar.gz (loong64)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-ppc64le-RELEASE_VERSION.tar.gz">Linux .tar.gz (ppc64le)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-riscv64-RELEASE_VERSION.tar.gz">Linux .tar.gz (riscv64)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/darkos_RELEASE_VERSION_arm64.deb">Linux .deb (ARM)</a>
+- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/darkos_RELEASE_VERSION_amd64.deb">Linux .deb (AMD)</a>
 
 
 ## Status

@@ -139,7 +139,7 @@ setpath "product" "twitterUrl" "https://x.com/darkoseditor"
 
 if [[ "${DISABLE_UPDATE}" != "yes" ]]; then
   setpath "product" "updateUrl" "https://raw.githubusercontent.com/pedro2rafael4561-boop/DarkOS-versions/refs/heads/main"
-  setpath "product" "downloadUrl" "https://github.com/pedro2rafael4561-boop/DarkOS/releases"
+  setpath "product" "downloadUrl" "https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases"
 fi
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
