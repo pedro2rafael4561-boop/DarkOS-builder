@@ -82,6 +82,11 @@ else
   fi
 fi
 
+if [[ -n "${GITHUB_TOKEN}" ]]; then
+  export GH_TOKEN="${GITHUB_TOKEN}"
+  export npm_config_github_token="${GITHUB_TOKEN}"
+fi
+
 mv .npmrc .npmrc.bak
 cp ../npmrc .npmrc
 
@@ -92,7 +97,7 @@ for i in {1..5}; do # try 5 times
     npm ci && break
   fi
 
-  if [[ $i == 3 ]]; then
+  if [[ $i == 5 ]]; then
     echo "Npm install failed too many times" >&2
     exit 1
   fi
