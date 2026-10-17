@@ -11,7 +11,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:key name="vId1ToReplace" match="wi:Component[wi:File[contains(@Source,'@@PRODUCT_NAME@@.exe')]]" use="@Id"/>
+  <xsl:key name="vId1ToReplace" match="wi:Component[wi:File[contains(@Source,'@@PRODUCT_NAME@@.exe') or contains(@Source,'DarkOS.exe') or contains(@Source,'darkos.exe') or contains(@Source,'Void.exe')]]" use="@Id"/>
   <xsl:template match="node()[key('vId1ToReplace', @Id)]">
     <xsl:copy>
       <xsl:attribute name="Id">VOID.EXE</xsl:attribute>
@@ -19,7 +19,7 @@
       <xsl:apply-templates />
     </xsl:copy>
   </xsl:template>
-  <xsl:template match="wi:Component/wi:File[contains(@Source,'@@PRODUCT_NAME@@.exe')]">
+  <xsl:template match="wi:Component/wi:File[contains(@Source,'@@PRODUCT_NAME@@.exe') or contains(@Source,'DarkOS.exe') or contains(@Source,'darkos.exe') or contains(@Source,'Void.exe')]">
      <xsl:copy>
         <xsl:attribute name="Id">VOID.EXE</xsl:attribute>
         <xsl:copy-of select="@*[name()!='Id']"/>
