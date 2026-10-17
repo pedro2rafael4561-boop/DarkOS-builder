@@ -1,31 +1,35 @@
 # DarkOS VOID_VERSION
 
-See https://github.com/pedro2rafael4561-boop/DarkOS for DarkOS's official download page.
+Veja a página oficial de download: https://github.com/pedro2rafael4561-boop/DarkOS
 
-For maintainers: [`DarkOS-builder/`](https://github.com/pedro2rafael4561-boop/DarkOS-builder#readme)
+Para mantenedores: [`DarkOS-builder/`](https://github.com/pedro2rafael4561-boop/DarkOS-builder#readme)
 
-# Binaries
+# Binários de Instalação (Downloads)
 
-## Windows
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOSSetup-x64-RELEASE_VERSION.exe">Windows (x64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOSSetup-arm64-RELEASE_VERSION.exe">Windows (ARM)</a>
+## 🪟 Windows (Compatível com Windows 11 e Windows 10)
+> **Importante para Windows 11:** 
+> - A grande maioria dos computadores Windows 11 utiliza processador Intel ou AMD de 64 bits: baixe a versão **x64 (Instalador de Usuário)** recomendada.
+> - A versão **ARM64** é exclusivamente para dispositivos com chip ARM (ex: Snapdragon X Elite / Copilot+ PC). Se você tentar abrir o instalador ARM64 em um PC Intel/AMD, o Windows 11 emitirá aviso de aplicativo incompatível.
+> - **Aviso do SmartScreen no Windows 11:** Como este é um projeto open-source sem certificado comercial corporativo, o SmartScreen pode exibir *"O Windows protegeu o seu computador"*. Clique em **"Mais informações"** e em seguida em **"Executar assim mesmo"**.
 
-## Mac
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS.x64.RELEASE_VERSION.dmg">Mac (x64 / Intel)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS.arm64.RELEASE_VERSION.dmg">Mac (ARM / M Chip)</a>
+- **<a href="DOWNLOAD_BASE_URL/DarkOSUserSetup-x64-RELEASE_VERSION.exe">Windows 11 / 10 (x64) - Instalador de Usuário (Recomendado)</a>**
+- <a href="DOWNLOAD_BASE_URL/DarkOSSetup-x64-RELEASE_VERSION.exe">Windows 11 / 10 (x64) - Instalador de Sistema (Admin)</a>
+- <a href="DOWNLOAD_BASE_URL/DarkOSUserSetup-arm64-RELEASE_VERSION.exe">Windows 11 (ARM64 / Snapdragon) - Instalador de Usuário</a>
+- <a href="DOWNLOAD_BASE_URL/DarkOSSetup-arm64-RELEASE_VERSION.exe">Windows 11 (ARM64 / Snapdragon) - Instalador de Sistema</a>
+- <a href="DOWNLOAD_BASE_URL/DarkOS-win32-x64-RELEASE_VERSION.zip">Windows 11 / 10 (x64) - Portátil (.zip)</a>
+- <a href="DOWNLOAD_BASE_URL/DarkOS-x64-RELEASE_VERSION.msi">Windows 11 / 10 (x64) - Pacote Corporativo (.msi)</a>
 
-## Linux
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-x64-RELEASE_VERSION.tar.gz">Linux .tar.gz (x64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-arm64-RELEASE_VERSION.tar.gz">Linux .tar.gz (arm64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-armhf-RELEASE_VERSION.tar.gz">Linux .tar.gz (armhf)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-loong64-RELEASE_VERSION.tar.gz">Linux .tar.gz (loong64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-ppc64le-RELEASE_VERSION.tar.gz">Linux .tar.gz (ppc64le)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/DarkOS-linux-riscv64-RELEASE_VERSION.tar.gz">Linux .tar.gz (riscv64)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/darkos_RELEASE_VERSION_arm64.deb">Linux .deb (ARM)</a>
-- <a href="https://github.com/pedro2rafael4561-boop/DarkOS-binaries/releases/download/RELEASE_VERSION/darkos_RELEASE_VERSION_amd64.deb">Linux .deb (AMD)</a>
+## 🍎 macOS
+- <a href="DOWNLOAD_BASE_URL/DarkOS.arm64.RELEASE_VERSION.dmg">Mac Apple Silicon (M1 / M2 / M3 / M4)</a>
+- <a href="DOWNLOAD_BASE_URL/DarkOS.x64.RELEASE_VERSION.dmg">Mac Intel (x64)</a>
 
+## 🐧 Linux
+- <a href="DOWNLOAD_BASE_URL/DarkOS-linux-x64-RELEASE_VERSION.tar.gz">Linux .tar.gz (x64)</a>
+- <a href="DOWNLOAD_BASE_URL/DarkOS-linux-arm64-RELEASE_VERSION.tar.gz">Linux .tar.gz (arm64)</a>
+- <a href="DOWNLOAD_BASE_URL/darkos_RELEASE_VERSION_amd64.deb">Linux .deb (AMD64)</a>
+- <a href="DOWNLOAD_BASE_URL/darkos_RELEASE_VERSION_arm64.deb">Linux .deb (ARM64)</a>
 
-## Status
-If any downloads give a 404, this version is likely very new. Try the previous version until the workflows complete!
+---
 
+## Status da Compilação
 [![stable-windows](https://github.com/pedro2rafael4561-boop/DarkOS-builder/actions/workflows/stable-windows.yml/badge.svg)](https://github.com/pedro2rafael4561-boop/DarkOS-builder/actions/workflows/stable-windows.yml) [![stable-macos](https://github.com/pedro2rafael4561-boop/DarkOS-builder/actions/workflows/stable-macos.yml/badge.svg)](https://github.com/pedro2rafael4561-boop/DarkOS-builder/actions/workflows/stable-macos.yml) [![stable-linux](https://github.com/pedro2rafael4561-boop/DarkOS-builder/actions/workflows/stable-linux.yml/badge.svg)](https://github.com/pedro2rafael4561-boop/DarkOS-builder/actions/workflows/stable-linux.yml)
